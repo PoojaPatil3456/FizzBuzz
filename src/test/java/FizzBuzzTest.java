@@ -27,5 +27,9 @@ public class FizzBuzzTest {
         FizzBuzz fizzbuzz=new FizzBuzz(30);
         assertEquals("FizzBuzz",fizzbuzz.fizzBuzz());
     }
-
+    @Test
+    void toPrintNullWhenNumberIsNeitherDisibleNorContainsThreeAndFive(){
+        FizzBuzz fizzbuzz=new FizzBuzz(7);
+        assertEquals(null,fizzbuzz.fizzBuzz());
+    }
 }
