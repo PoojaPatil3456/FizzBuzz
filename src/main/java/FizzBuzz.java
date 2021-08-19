@@ -4,9 +4,12 @@ public class FizzBuzz {
         this.number=number;
     }
     public String fizzBuzz(){
-        if(number%3==0)
+        String strNumber=Integer.toString(number);
+        if(number%15==0)
+            return "FizzBuzz";
+        else if(number%3==0 || strNumber.contains("3"))
             return "Fizz";
-        if(number%5==0)
+        else if(number%5==0 || strNumber.contains("5"))
             return "Buzz";
         return null;
     }
